@@ -2,20 +2,15 @@ package com.example.calculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.SimpleAdapter.ViewBinder
 import com.example.calculator.databinding.ActivityMainBinding
 
-//Сделать на viewBinding и разобраться с ним
-//почитать про jetpack compose
-//на данный момент ничего не работает))
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
-    val expressionField = ExpressionField()
+    private val expressionField = ExpressionField()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         val bt8: Button = findViewById(R.id.button8)
         val bt9: Button = findViewById(R.id.button9)
         val bt0: Button = findViewById(R.id.button0)
+        val btdivision: Button = findViewById(R.id.buttondivision)
 
         expressionField.numberAction(bt1, binding)
         expressionField.numberAction(bt2, binding)
@@ -44,5 +40,6 @@ class MainActivity : AppCompatActivity() {
         expressionField.numberAction(bt8, binding)
         expressionField.numberAction(bt9, binding)
         expressionField.numberAction(bt0, binding)
+
     }
 }
