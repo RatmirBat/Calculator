@@ -119,12 +119,44 @@
             app:layout_constraintTop_toBottomOf="@+id/button2" />
 
         <Button
-            android:id="@+id/buttondivision"
+            android:id="@+id/button_division"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
             app:layout_constraintStart_toEndOf="@+id/button9"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_addition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            app:layout_constraintStart_toEndOf="@+id/button6"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <Button
+            android:id="@+id/button_subtraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            app:layout_constraintStart_toEndOf="@+id/button3"
+            app:layout_constraintTop_toBottomOf="@+id/button_addition" />
+
+        <Button
+            android:id="@+id/button_multiplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            app:layout_constraintStart_toEndOf="@+id/button0"
+            tools:layout_editor_absoluteY="144dp" />
+
+        <Button
+            android:id="@+id/ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC"
+            app:layout_constraintEnd_toStartOf="@+id/button0"
+            app:layout_constraintTop_toBottomOf="@+id/button1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

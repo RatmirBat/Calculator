@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.calculator.databinding.ActivityMainBinding
 
-
+//какая-то хуйня с операторами
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -28,7 +28,11 @@ class MainActivity : AppCompatActivity() {
         val bt8: Button = findViewById(R.id.button8)
         val bt9: Button = findViewById(R.id.button9)
         val bt0: Button = findViewById(R.id.button0)
-        val btdivision: Button = findViewById(R.id.buttondivision)
+        val btnDivision: Button = findViewById(R.id.button_division)
+        val btnMultiplication: Button = findViewById(R.id.button_multiplication)
+        val btnAddition: Button = findViewById(R.id.button_addition)
+        val btnSubtraction: Button = findViewById(R.id.button_subtraction)
+        val clearAll: Button = findViewById(R.id.ac)
 
         expressionField.numberAction(bt1, binding)
         expressionField.numberAction(bt2, binding)
@@ -40,6 +44,14 @@ class MainActivity : AppCompatActivity() {
         expressionField.numberAction(bt8, binding)
         expressionField.numberAction(bt9, binding)
         expressionField.numberAction(bt0, binding)
+
+
+        expressionField.operationAction(btnDivision, binding)
+        expressionField.operationAction(btnMultiplication, binding)
+        expressionField.operationAction(btnAddition, binding)
+        expressionField.operationAction(btnSubtraction, binding)
+
+        expressionField.clearAction(clearAll, binding)
 
     }
 }
