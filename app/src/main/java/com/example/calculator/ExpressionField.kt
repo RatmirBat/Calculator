@@ -9,17 +9,18 @@ class ExpressionField {
     fun numberAction(button: Button, binding: ActivityMainBinding) {
         button.setOnClickListener {
             binding.expression.append(button.text)
+            canAddOperation = true
         }
-        canAddOperation = true
     }
 
     fun operationAction(button: Button, binding: ActivityMainBinding) {
-        if (canAddOperation) {
-            button.setOnClickListener {
+        button.setOnClickListener {
+            if (canAddOperation) {
                 binding.expression.append(button.text)
+                canAddOperation = false
             }
         }
-        canAddOperation = false
+
     }
 
     fun clearAction(button: Button, binding: ActivityMainBinding) {

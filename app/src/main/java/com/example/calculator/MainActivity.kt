@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.calculator.databinding.ActivityMainBinding
 
-//какая-то хуйня с операторами
-
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
