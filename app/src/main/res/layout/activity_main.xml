@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:textAlignment="textEnd"
-            android:textSize="24sp"
+            android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +29,7 @@
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:textSize="24sp"
+            android:textSize="40sp"
             android:textAlignment="textEnd"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
