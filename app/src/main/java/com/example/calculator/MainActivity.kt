@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private val expressionField = ExpressionField()
+    private val resultField = ResultField()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         val btnAddition: Button = findViewById(R.id.button_addition)
         val btnSubtraction: Button = findViewById(R.id.button_subtraction)
         val clearAll: Button = findViewById(R.id.ac)
+        val equals: Button = findViewById(R.id.button_equals)
 
         expressionField.numberAction(bt1, binding)
         expressionField.numberAction(bt2, binding)
@@ -50,6 +52,8 @@ class MainActivity : AppCompatActivity() {
         expressionField.operationAction(btnSubtraction, binding)
 
         expressionField.clearAction(clearAll, binding)
+
+        resultField.resultAction(equals, binding)
 
     }
 }

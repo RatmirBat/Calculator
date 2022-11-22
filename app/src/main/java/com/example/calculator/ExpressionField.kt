@@ -26,6 +26,7 @@ class ExpressionField {
     fun clearAction(button: Button, binding: ActivityMainBinding) {
         button.setOnClickListener {
             binding.expression.text = ""
+            binding.result.text = ""
         }
         canAddOperation = false
     }
