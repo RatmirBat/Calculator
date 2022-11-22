@@ -162,7 +162,7 @@
             <Button
                 android:id="@+id/button"
                 style="@style/button"
-                android:text="."
+                android:text=""
                 />
 
             <Button
